@@ -1,6 +1,6 @@
 import pygame
 print("works")
-window = pygame.display.set_mode((30,30))
+window = pygame.display.set_mode((100,100))
 pygame.display.flip()
 while True:
   pass
