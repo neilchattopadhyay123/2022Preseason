@@ -12,7 +12,7 @@ def translator():
             input2 = input("Please Enter Input: ")
             if input2 != "":
                 for words in input2:
-                    ascii += str(ord(words)).zfill(3)
+                    ascii += str(ord(words)).zfill(3) + " "
                 print(ascii)  # Having trouble with my code here. It won't print complete ascii!
                 prompt = input("Would you like to translate anything else? >")
                 if prompt == "yes":
@@ -34,7 +34,7 @@ def translator():
                     os.execv(__file__, sys.argv)
         else:
             for words in input1:
-                ascii += str(ord(words)).zfill(3)
+                ascii += str(ord(words)).zfill(3) + " "
             print(ascii)  # Is the multiple lines because of the for loop?
             prompt = input("Would you like to translate anything else? >")
             if prompt == "yes":
