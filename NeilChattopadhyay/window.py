@@ -10,7 +10,8 @@ BLUE = (0, 0, 255)
 GRAY = (200, 200, 200)
 
 pygame.init()
-screen = pygame.display.set_mode((640, 240))
+screen = pygame.display.set_mode((1080, 820))
+pygame.display.set_caption('Interface')
 
 sysfont = pygame.font.get_default_font()
 print('system font :', sysfont)
@@ -23,11 +24,11 @@ img = font.render(sysfont, True, RED)
 rect = img.get_rect()
 pygame.draw.rect(img, BLUE, rect, 1)
 
-font1 = pygame.font.SysFont('Neil Chattopadhyay Grade 11', 72)
-img1 = font1.render('chalkduster.ttf', True, BLUE)
+font1 = pygame.font.SysFont('chalkduster.ttf', 72) 
+img1 = font1.render('Neil Chattopadhyay Grade 11', True, BLUE)
 
-font2 = pygame.font.SysFont('I think dhruv is the hottest member of MATE.', 72)
-img2 = font2.render('didot.ttc', True, GREEN)
+font2 = pygame.font.SysFont('didot.ttc', 72)
+img2 = font2.render('I think dhruv is the hottest member of MATE.', True, GREEN) 
 
 fonts = pygame.font.get_fonts()
 print(len(fonts))
