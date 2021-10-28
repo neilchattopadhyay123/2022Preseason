@@ -1,2 +1,2 @@
 import pygame
-pygame.window
+print("works")
