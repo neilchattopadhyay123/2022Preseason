@@ -1,6 +1,7 @@
 import pygame
+size = [500,500]
 print("works")
-screen = pygame.display.set_mode((500,500))
+screen = pygame.display.set_mode(size)
 pygame.display.flip()
 pygame.display.set_caption("Interface")
 pygame.font.init()
@@ -10,5 +11,10 @@ screen.blit(font.render('Daanyaal Hussain', True, (250,250,0)), (0,0))
 screen.blit(font.render('Grade 9.', True, (0,250,0)), (0,30))
 screen.blit(font.render('Daanyaal Hussain is a Freshman.', True, (0,0,250)), (0,60))
 pygame.display.update()
-while True:
-  pass
+
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+pygame.quit()
