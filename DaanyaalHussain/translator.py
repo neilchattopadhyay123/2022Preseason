@@ -1,5 +1,9 @@
 text = input("Enter your Text: ")
 print(text)
+final_output = ''
 
 for character in text:
-  print(str(ord(character)).zfill(3))
+  newcharacter = str(ord(character)).zfill(3)
+  final_output += newcharacter + ' '
+  
+print(final_output)
